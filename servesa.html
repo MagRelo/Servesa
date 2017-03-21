@@ -10,7 +10,7 @@
 
     <!-- Styles, Fonts -->
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <link href="https://fonts.googleapis.com/css?family=Galada|Mandali" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One|Catamaran" rel="stylesheet">
     <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css"> -->
     
     <!-- GA -->
@@ -40,6 +40,9 @@
       }
 
       html,body{
+        font-family: 'Catamaran', sans-serif;
+        color: gray;       
+
         height: 100%;
         background: rgba(224,228,204,1);
         background: -moz-radial-gradient(center, ellipse cover, rgba(224,228,204,1) 0%, rgba(167,219,216,1) 100%);
@@ -54,41 +57,56 @@
       h1 {
         margin: 0;
         
-        line-height: .825em;        
-        font-family: 'Galada', cursive;        
+        line-height: 1em;        
+        font-family: 'Supermercado One', cursive;        
         font-size: 5em;
         font-weight: normal;
         text-shadow: 1px 1px 2px #217794;
         
-        border-bottom: solid .02em #f8f8ff;
+        /*border-bottom: solid .02em #f8f8ff;*/
       }
 
       h2{
         margin: 0;
 
-        line-height: 1.65em;
-        font-family: 'Mandali', sans-serif;
+        color: #f8f8ff;               
         font-weight: normal;        
+
+      }
+
+      hr{
+        width: 100%;
+        color: white;
+        border-style: solid;
       }
 
       .titleBox {        
         background-color: #69D2E7;
-        padding: 3em;
+        padding: 2em;
         margin-bottom: 3em;
 
         /* 52bbde */
-        box-shadow: 0 0 0 0.1em #f8f8ff, 
+        box-shadow: 0 0 0 0.1em #ffffd2, 
                     1em 0.825em 0 #FA6900, 
                     -1em -0.825em 0 #F38630;
         
         color: #f8f8ff;       
       }
 
+      .textBox{
+        max-width: 28em;
+        margin: 0 1em ;
+
+        padding: 0 1em;
+        border-radius: 1em;
+        background-color: ghostwhite;
+        box-shadow: 0 0 0 1em #69D2E7, 0 0 0 1.1em #FA6900; 
+      }
 
       /*Larger screens*/
       @media (max-width: 600px) {
         .titleBox {
-          padding: 2em;
+          padding: 1em;
         }
       }
 
@@ -98,9 +116,15 @@
   <body class="flex-container">
 
     <div class="flex-container titleBox">
-      <h1 >Servesa</h1>
-      <h2 >all the  fun stuff :)</h2>
+      <h1 >Servesa</h1>      
+      <hr>
+      <h2>intelligent consumer agents</h2>
     </div>
+    <!-- 
+    <div class="textBox">
+      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some </p>
+    </div>
+     -->
 
   </body>
 </html>
