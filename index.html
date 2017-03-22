@@ -63,6 +63,15 @@
         font-weight: normal;
         text-shadow: 1px 1px 2px #655e1f;
         
+        animation: fadeTitle 1s 1 ease-out;
+      }
+      @keyframes fadeTitle {
+        0% {
+            opacity: 0
+        }
+        85% {
+           opacity: 0
+        }
       }
 
       h2{
@@ -77,6 +86,7 @@
         width: 100%;
         color: white;
         border-style: solid;
+        animation: fadeTitle 1.5s 1 ease-out;
       }
 
       .titleBox {        
@@ -91,20 +101,22 @@
                     1em 0.825em 0 #FA6900, 
                     -1em -0.825em 0 #F38630;
 
-        animation: slideBoxShadow 1.5s 1 ease;
+        animation: slideBoxShadow 1s 1 ease-in-out;
       }
       @keyframes slideBoxShadow {
         0% {
             box-shadow: 0 0 0 0 #ffffd2, 
             0 0 0 #FA6900, 
-            0 0 0 #F38630;        
+            0 0 0 #F38630; 
             opacity: 0;
         }
-        66% {
+        50% {
+            opacity: 100%; 
+        }
+        66% {            
             box-shadow: 0 0 0 0 #ffffd2, 
             0 0 0 #FA6900, 
-            0 0 0 #F38630;                    
-            opacity: 0;
+            0 0 0 #F38630;                                
         }        
       }
 
@@ -124,6 +136,10 @@
         .titleBox {
           padding: 1em;
         }
+
+        h1 {
+          font-size: 4em;
+        }
       }
 
     </style>
@@ -133,8 +149,11 @@
 
     <div class="flex-container titleBox">
       <h1>Servésa</h1>      
-      <hr>
-      <h2>auto-tune for business</h2>
+      <!-- <hr>
+      <h2>
+        <span>some type of business, </span>
+        <span>maybe</span>
+      </h2> -->
     </div>
     <!-- 
     <div class="textBox">
