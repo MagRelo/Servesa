@@ -54,26 +54,6 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e4cc', endColorstr='#a7dbd8', GradientType=1 );
       }
 
-      h1 {
-        margin: 0;
-        
-        line-height: 1em;        
-        font-family: 'Monofett', cursive;        
-        font-size: 5em;
-        font-weight: normal;
-        text-shadow: 1px 1px 2px #655e1f;
-        
-        animation: fadeTitle 1.66s 1 ease-out;
-      }
-      @keyframes fadeTitle {
-        0% {
-            opacity: 0
-        }
-        66% {
-           opacity: 0
-        }
-      }
-
       h2{
         margin: 0;
 
@@ -89,6 +69,20 @@
         animation: fadeTitle 1.5s 1 ease-out;
       }
 
+
+      h1 {
+        margin: 0;
+        
+        line-height: 1em;        
+        font-family: 'Monofett', cursive;        
+        font-size: 5em;
+        font-weight: normal;
+        text-shadow: 1px 1px 2px #655e1f;
+        
+        animation: fadeTitle 1.66s 1 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+      }
+
+
       .titleBox {        
         
         color: #f8f8ff;       
@@ -101,9 +95,26 @@
                     1em 0.825em 0 #FA6900, 
                     -1em -0.825em 0 #F38630;
 
-        animation: slideBoxShadow 1s 1 ease-in-out;
+        animation: slideBoxShadow 1.5s 1 cubic-bezier(0.250, 0.460, 0.450, 0.940);
       }
+
+
+      /**/
+      @keyframes fadeTitle {
+        /*animation: fadeTitle 1.5s 1 ease-out;*/
+        0% {
+            opacity: 0;
+        }
+        33% {
+           opacity: 0;
+        }
+        66% {
+           opacity: 100%;
+        }
+      }
+
       @keyframes slideBoxShadow {
+        /*animation: slideBoxShadow 1.5s 1 ease-in-out;*/
         0% {
             box-shadow: 0 0 0 0 #ffffd2, 
             0 0 0 #FA6900, 
